@@ -1,5 +1,0 @@
-ku\product\controller\ProductController.class
-ku\product\service\ProductService.class
-ku\product\repository\ProductRepository.class
-ku\product\ProductApplication.class
-ku\product\entity\Product.class
