@@ -24,9 +24,22 @@ public class ProductService {
 
 
     public Product create(Product restaurant) {
-        return repository.save(restaurant);
+        Product record = repository.save(restaurant);
+        return record;
     }
 
+    public Product getProductById(int id) {
+        return repository.findById(id).get();
+    }
+
+    public Product getProductByName(String name) {
+        return repository.findByName(name);
+    }
+
+
+    public List<Product> getProductByType(String type) {
+        return repository.findByType(type);
+    }
 
 }
 
